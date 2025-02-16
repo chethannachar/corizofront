@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Form Container */
+form {
+    width: 780px; /* Fit within phone screen */
+    background:transparent; /* No background */
+    padding: 20px;
+    box-shadow: transparent;
+    border-radius: 30px;
+    text-align: center;
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    gap:100px;
+    padding-top: 60px;
+    margin-left: 00px;
+
+    padding-bottom: 60px;
+}
+
+form input {
+    width: 640px;
+    padding: 12px;
+    font-size: 50px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+}
+
+/* Input Focus Effect */
+form input:focus {
+    border-color: #dc3545; /* Red border for delete action */
+    outline: none;
+}
+
+/* Delete Button */
+form button{
+    width: 100%;
+    margin-top: -40px;
+    padding: 12px;
+    width: 640px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 55px;
+    transition: background-color 0.3s ease-in-out;
+  }
+.b2 form button{
+    width: 100%;
+    margin-top: -40px;
+    padding: 12px;
+    width: 500px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 60px;
+    transition: background-color 0.3s ease-in-out;
+  }
+
+form button:hover {
+    background-color: #c82333;
+}
+
+/* Home Button */
+.b2 {
+    margin-top: 10px;
+    width: 90%;
+    width: 400px;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #28a745; /* Green for Home */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.b2:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 576px) {
+    form {
+        width: 95%;
+        padding: 15px;
+    }
+
+    form input,
+    form button,
+    .b2 {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

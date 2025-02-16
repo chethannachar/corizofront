@@ -1,0 +1,150 @@
+/* Global Styles */
+body {
+  background-color: #f0f2f5;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Update Container */
+.update-container {
+  padding: 20px;
+  width: 100%;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: transparent;
+  text-align: center;
+  margin-top: 100px;
+  padding-bottom: 0px;
+
+}
+
+/* Heading */
+h1, h2 {
+  font-size: 28px;
+  color: #333;
+}
+h1 {
+  text-align: center;
+  font-size: 50px;/*creased font size */
+  font-weight: bold;
+  color: #2c3e50;
+  margin-top: 20px;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  width: 120px; /* Increased width */
+  height: 4px;
+  background-color: #e74c3c;
+  margin: 8px auto 0 auto;
+  border-radius: 2px;
+}
+/* Form */
+.update-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: -40px;
+  margin-left: -210px;
+  width: 780px;
+  border-radius: 30px;
+  padding-bottom: 60px;
+  background-color:transparent;
+}
+
+/* Input Field */
+input[type="text"] {
+  padding: 14px;
+  width: 650px;
+  height: 40px;
+  padding-right: 50px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 36px;
+  margin-left: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Proceed Button */
+form .b2{
+  width: 100%;
+  padding: 12px;
+  width: 700px;
+  background-color: #0e4eff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 35px;
+  margin-top: 30px;
+  transition: background-color 0.3s ease-in-out;
+}
+form h3{
+  margin-left: 10px;
+  font-size: 28px;
+}
+form .b1{
+  width: 100%;
+  padding: 12px;
+  width: 700px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 35px;
+  margin-top: 0px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.b2:hover {
+  background-color: #0056b3;
+}
+
+/* Note */
+p {
+  text-align: center;
+  margin-top: 105px;
+  color: #666;
+  font-size: 18px;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .update-container {
+      width: 90%;
+      height: auto;
+      max-width: none;
+  }
+
+  h1, h2 {
+      font-size: 18px;
+  }
+
+  input[type="text"],
+  .b2 {
+      font-size: 14px;
+      padding: 12px;
+  }
+
+  p {
+      font-size: 12px;
+  }
+}

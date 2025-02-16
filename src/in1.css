@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Title Section */
+.h1 {
+  text-align: center;
+  font-size: 2.5rem; /* Increased font size */
+  font-weight: bold;
+  color: #2c3e50;
+  margin-top: 20px;
+  position: relative;
+}
+
+.h1::after {
+  content: "";
+  display: block;
+  width: 120px; /* Increased width */
+  height: 4px;
+  background-color: #e74c3c;
+  margin: 8px auto 0 auto;
+  border-radius: 2px;
+}
+
+/* Actions Container */
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  margin-top: 120px;
+  padding: 0 20px;
+}
+
+/* Action Card */
+.action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 90%; /* Adjusted width to fit screen */
+  max-width: 800px;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.action:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.action b {
+  font-size: 42px; /* Increased font size */
+  padding: 20px;
+}
+
+.action button {
+  background-color: #0dbd91;
+  border: none;
+  padding: 15px 20px;
+  font-size: 26px; /* Increased font size */
+  color: #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  align-self: center; /* Center the button */
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.action button:hover {
+  background-color: #9407f1;
+  transform: scale(1.05);
+}
+
+.action p {
+  color: #7f8c8d;
+  font-size: 26px; /* Increased font size */
+  margin-top: 20px; /* Adjusted margin */
+}
+
+/* Note Section */
+.p1 {
+  margin-top: 100px;
+  font-size: 26px; /* Increased font size */
+  color: #7f8c8d;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .h1 {
+      font-size: 2.2rem; /* Increased font size */
+  }
+
+  .actions {
+      gap: 30px; /* Adjusted gap */
+      margin-top: 60px; /* Adjusted margin */
+  }
+
+  .action {
+      width: 95%; /* Increased width to fill screen */
+  }
+
+  .action button {
+      font-size: 24px; /* Increased font size */
+  }
+
+  .action p {
+      font-size: 24px; /* Increased font size */
+      margin-top: 20px; /* Adjusted margin */
+  }
+
+  .p1 {
+      font-size: 24px; /* Increased font size */
+  }
+}
