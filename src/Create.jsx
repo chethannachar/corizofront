@@ -53,7 +53,7 @@ function Create() {
         setLoading(true); // Show loading state
 
         try {
-            const response = await fetch("http://localhost:3000/create", {
+            const response = await fetch("https://corizominorbackend.vercel.app/create", {
                 method: "POST",
                 headers: { "Content-Type": "Application/json" },
                 body: JSON.stringify({ name, state, city, address }),

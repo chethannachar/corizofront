@@ -42,7 +42,7 @@ function Proceed() {
         setError("");
 
         try {
-            const response = await fetch("http://localhost:3000/update", {
+            const response = await fetch("https://corizominorbackend.vercel.app/update", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ name, state, city, address }),

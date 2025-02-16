@@ -17,7 +17,7 @@ function Delete() {
         setLoading(true); // Show loading state
 
         try {
-            const response = await fetch("http://localhost:3000/delete", {
+            const response = await fetch("https://corizominorbackend.vercel.app/delete", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ name })

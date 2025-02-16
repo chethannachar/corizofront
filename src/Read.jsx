@@ -9,7 +9,7 @@ function Read() {
    useEffect(() => {
       const fetchData = async () => {
          try {
-            const response = await fetch("http://localhost:3000/read");
+            const response = await fetch("https://corizominorbackend.vercel.app/read");
             const result = await response.json();
 
             if (result.success) {

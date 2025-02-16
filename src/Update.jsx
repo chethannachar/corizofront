@@ -10,7 +10,7 @@ function Update() {
         e.preventDefault(); // Prevent default form submission
 
         try {
-            const response = await fetch("http://localhost:3000/proceed", {
+            const response = await fetch("https://corizominorbackend.vercel.app/proceed", {
                 method: "POST",
                 headers: {
                     "Content-Type": "Application/json"
